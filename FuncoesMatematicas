@@ -1,0 +1,36 @@
+using System.Globalization;
+
+// Funçoes Matemáticas
+// EXEMPLO:
+// A = Math.sqrt(x); == variavel A recebe a raiz quadrada de x.
+// A = Math.Pow( x, y ); == variavel A recebe o resultado de x elevado a y.
+// A = Math.Abs(x); == variavel A recebe o valor absoluto de x(sem sinal).
+
+// delta = Math.Pow(b, 2.0) - 4 * a * c;
+// x1 = (-b + Math.Sqrt(delta)) / (2.0 *a);
+// x2 =(-b - Math.Sqrt(delta)) / (2.0 *a);
+double x = 3.0;
+double y = 4.0;
+double z = -5.0;
+double A, B, C;
+Console.WriteLine("Raiz quadrada: ");
+A = Math.Sqrt(x);// raiz quadrada de x(3.0).
+B = Math.Sqrt(y);// raiz quadrada de y(4.0).
+C = Math.Sqrt(25.0);// declarei direto que quero a raiz de 25
+Console.WriteLine("Raiz quadrada de " + x +" é " + A );
+Console.WriteLine("Raiz quadrada de " +y + " é " + B );
+Console.WriteLine("Raiz quadrada de 25 = "+C  );
+Console.ReadLine();
+Console.WriteLine("Resultado de x elevado a y: ");
+A = Math.Pow(x, y);
+B = Math.Pow(x, 2.0);
+C = Math.Pow(5.0, 2.0);
+Console.WriteLine(x+ " elevado a " + y + " = " + A);
+Console.WriteLine(x + " elevado ao quadrado = " +B );
+Console.WriteLine("5 elevado ao quadrado = " + C);
+Console.ReadLine();
+Console.WriteLine("Recebe o valor absoluto de x: ");
+A = Math.Abs(y);
+B =Math.Abs(z);
+Console.WriteLine("O valor absoluto de " + y + " é  " + A);
+Console.WriteLine("O valor absoluto de " + z + " é " + B);
