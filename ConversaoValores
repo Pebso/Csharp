@@ -1,0 +1,13 @@
+
+using System.Globalization;
+
+//1 min = 60 segundos / 60 min = 3600 seg
+
+int N, HORAS, RESTO, MINUTOS, SEGUNDOS;
+N = int.Parse(Console.ReadLine());
+HORAS = N / 3600;
+RESTO = N % 3600;
+
+MINUTOS = RESTO / 60;
+SEGUNDOS=RESTO% 60;
+Console.WriteLine(HORAS+":"+MINUTOS+":"+SEGUNDOS); 
