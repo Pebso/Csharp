@@ -1,0 +1,14 @@
+//laço repetição, operador mod, programa basico para contagem de cedulas.
+
+using System.Globalization;
+
+int[] notas = { 100, 50, 20, 10, 5, 2, 1 };// cedulas disponiveis 
+int reais = int.Parse(Console.ReadLine());// informaçao do usuario de quanto ele tem
+Console.WriteLine(reais); // inter usuario
+
+for (int i = 0; i < reais; i++)//laço repetiçao for, enquanto indice for < que o valor informado peo usuario i++ incrementa
+{
+    int cedulas = reais / notas[i];// variavel cedulas para me dar o resultado de quais cedulas eu vou dar
+    Console.WriteLine(cedulas + " notas de " + notas[i]);
+    reais %= notas[i];//operador mod para me dar o resto das notas do indice
+}
