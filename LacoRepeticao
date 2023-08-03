@@ -9,6 +9,6 @@ Console.WriteLine(reais); // inter usuario
 for (int i = 0; i < reais; i++)//laço repetiçao for, enquanto indice for < que o valor informado peo usuario i++ incrementa
 {
     int cedulas = reais / notas[i];// variavel cedulas para me dar o resultado de quais cedulas eu vou dar
-    Console.WriteLine(cedulas + " notas de " + notas[i]);
+    Console.WriteLine(cedulas + " notas de " + notas[i].ToString("F2")););
     reais %= notas[i];//operador mod para me dar o resto das notas do indice
 }
