@@ -1,0 +1,13 @@
+using System.Globalization;
+
+// converte dias em ano meses e dias, levando em consideração que os anos tem 365 dias e os meses 30 dias.
+
+int idadeEmDias = int.Parse(Console.ReadLine());
+
+int anos = idadeEmDias / 365; 
+int meses = (idadeEmDias % 365) / 30;
+int dias = (idadeEmDias % 365) % 30;
+
+Console.WriteLine(anos + " ano(s)");
+Console.WriteLine(meses + " mes(es)");
+Console.WriteLine(dias + " dia(s)");
