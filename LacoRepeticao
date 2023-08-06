@@ -1,6 +1,7 @@
 //laço repetição, operador mod, programa basico para contagem de cedulas.
 
 using System.Globalization;
+1 erros encontrado, as vezes nao declara cedulas inferiores a 5. *FAZER CORREÇÃO*
 
 int[] notas = { 100, 50, 20, 10, 5, 2, 1 };// cedulas disponiveis 
 int reais = int.Parse(Console.ReadLine());// informaçao do usuario de quanto ele tem
